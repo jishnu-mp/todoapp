@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./todo.css">
+    <script src="https://kit.fontawesome.com/1dbcb98de1.js" crossorigin="anonymous"></script>
+    <title>Todo</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main-head">
+            <p class="heading-bold">Tasks <span class="heading-light">List</span></p>
+            <p onclick="addTask()"><i class="fas fa-plus-circle plus"></i><span class="add-item">Add Item</span></p>
+        </div>
+        <div class="main-card" id="card-container">
+            
+            
+        </div>
+        <div class="empty" >No Items in the todo list</div> 
+  
+
+    </div>
+    <div class="popup_list" >
+        <div>
+            <p class="card-heading">Add New List</p>
+        </div>
+        <div>
+            <input type="text" id="head-text" placeholder="Add New List" >
+        </div>
+        <div>
+            <button class="add-btn" onclick="addTodo()">Add</button>
+            <button class="close-btn" onclick="listClose()">close</button>
+        </div>
+    </div>
+    <div class="popup_item">
+        <div>
+            <p class="card-heading">Add New Item</p>
+
+            </div>
+        <div>
+            <input type="text" id="task-text" placeholder="Add New Item">
+        </div>
+        <div>
+            <button class="add-btn" onclick="addSubTodo()"  >Add</button>
+            <button class="close-btn" onclick="itemClose()">close</button>
+        </div>
+    </div>
+     
+
+
+
+    <script src="./todo.js"></script>
+</body>
+</html>
